@@ -1,0 +1,62 @@
+@import (less) "../../node_modules/nprogress/nprogress.css";
+/*Layout*/
+.ant-layout {
+  > .ant-layout {
+    min-height: 100vh;
+  }
+  &-header {
+    background: #fff;
+    box-shadow: 0 2px 8px #f0f1f2;
+    z-index: 10;
+    padding: 0 16px;
+
+    .trigger {
+      font-size: 18px;
+      line-height: 64px;
+      padding: 0 24px;
+      cursor: pointer;
+      transition: color .3s;
+      float: left;
+      &:hover, &:focus {
+        color: #1890ff;
+      }
+    }
+  }
+
+  &-sider {
+    z-index: 20;
+    position: sticky;
+    top: 0;
+    left: 0;
+    .logo {
+      height: 64px;
+      background: rgba(255, 255, 255, .2);
+    }
+  }
+
+  &-content {
+    min-height: 80vh;
+    position: relative;
+
+    margin: 16px 16px 0;
+    > div {
+      padding: 24px;
+      background: #fff;
+      min-height: 80vh;
+    }
+  }
+
+  &-footer {
+    text-align: center;
+  }
+  .ant-breadcrumb {
+    float: right;
+  }
+
+  h1 {
+    float: left;
+    margin: 0;
+  }
+}
+
+/*!Layout*/
